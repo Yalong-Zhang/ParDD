@@ -40,7 +40,7 @@ g++ main.cpp -o main -std=c++20 -O3 -pthread
 Run the executable with the following arguments:
 
 ```
-./main <dataset_address> <algorithm> <thread_number>
+./main <dataset_address> <algorithm> <number_of_threads>
 ```
 
 ### Arguments
@@ -51,17 +51,17 @@ Run the executable with the following arguments:
 * **`algorithm`**
   Specifies which algorithm to run. The available options are:
 
-  |  Flag | Algorithm Name | Description                           |
-  | ----: | -------------- | ------------------------------------- |
-  | `-if` | IncrFlow       | Incremental Flow–based algorithm      |
-  | `-bd` | BinaryDC       | Binary-based Density Clustering       |
-  | `-md` | MeanDC         | Mean-based Density Clustering         |
-  | `-cd` | CoreDC         | Core-based Density Clustering         |
-  | `-hd` | HeatDC         | Heat-based Density Clustering         |
-  | `-ch` | CoreHeatDC     | Hybrid Core + Heat Density Clustering |
+  |  Flag | Algorithm Name |
+  | ----: | -------------- |
+  | `-if` | IncrFlow       |
+  | `-bd` | BinaryDC       |
+  | `-md` | MeanDC         |
+  | `-cd` | CoreDC         |
+  | `-hd` | HeatDC         |
+  | `-ch` | CoreHeatDC     |
 
 * **`number_of_threads`**
-  Number of threads to use for parallel execution (uses POSIX threads).
+  Number of threads to use.
 
 ### Example
 
